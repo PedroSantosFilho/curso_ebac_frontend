@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body > header { /* estilizando o cabeçalho */
+   background-color: #2f3640;
+   color: white;
+   padding: 18px 0;
+}
+
+.title {
+   font-size: 50px;
+   margin-bottom: 15px;
+}
+
+h2, h3, p {
+   text-align: justify;
+   margin-top: 5px;
+}
+
+/* estiliza o container do header com Flexbox */
+header .container {
+   display: flex; /* ativa o flexbox */
+   align-items: center; /* alinha os itens ao centro */
+   justify-content: space-between; /* adiciona espaço entre o conteúdo */
+}
+
+/* configura a lista do heaer */
+header li {
+   display: inline; /* mostra o conteúdo em linha */
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold; /* fonte em negrito */
+   margin-right: 16px; /* margem direita com 16 pixel */
+}
+
+/* configura o âncora qeu está dentro da lista dentro de header */
+header li a {
+   color: #f6f6f6; /* cor das letras branca */
+   text-decoration: none; /* sem decoração do texto */
+}
+
+/* configura os containers */
+.container {
+   width: 1366px; /* largura 1366 pixel */
+   margin: 0 auto; /* margens superior e inferior 0, exquerda e direita automática */
+}
+
+/* configura os artigos com flexbox */
+.article {
+   display: flex; /* ativa o flexbox */
+   flex-wrap: wrap; /* quebra de linha quando encolher o navegador */
+   justify-content: space-between; /* coloca expaço entre o conteudo */ 
+}
+
+/* configura a imagem dentro do artigo na classe artigo */
+.article article img {
+   width: 100%; /* largura de 100% do espaço do artigo */
+   height: 50%; /* altura */
+}
+
+/* configura o artigo dentro da classe artigo */
+.article article {
+   width: 30%; /* largura de 30% dos 100% */
+}
+
+/* configura as seções */
+section {
+   padding: 16px 0; /* preenchimento entre os conteúdos lados superior e inferior de 16 pixel e zero na esquerda e direita */
+}
+
+section h2,
+.article article {
+   margin-bottom: 16px;
+}
+
+.article article a {
+   background-color: yellow;
+   color: blue;
+   display: inline;
+   text-decoration: none;
+}
+
+/* configura o botão Ler mais ao passar o mause por cima */
+.article article a:hover {
+   background-color: aqua;
+   color: black;
+   text-decoration: underline;
+}
+
+.article article p,
+.article article a {
+   font-family: Arial, Helvetica, sans-serif;
+   line-height: 1.5;
+   text-align: justify;
+}
+
+#entretenimento {
+   background-color: rgba(190, 189, 216, 0.636);
+}
+
+#tecnologia {
+   background-color: rgba(230, 236, 207, 0.694);
+}
+
+footer {
+   font-size: 30px;
+}
